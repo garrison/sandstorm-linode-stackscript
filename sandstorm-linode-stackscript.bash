@@ -58,11 +58,12 @@ empty -w "sandcats.io subdomain" "${SANDCATS_SUBDOMAIN}\n" || test $? -eq 1
 empty -w "email address" "${SANDCATS_EMAIL}\n" || test $? -eq 1 # for Sandcats
 empty -t 30 -w "email address" "${SANDCATS_EMAIL}\n" || test $? -eq 1 # for Let's Encrypt
 
-# Update /etc/motd
-# Edit /etc/motd to have a login message
+# Update /etc/motd with useful information upon success.
 echo All done.
 cat <<EOF >/etc/motd
 Sandstorm install is complete.  You can continue setup by running
 'sandstorm admin-token' and visiting the provided URL.
 EOF
+
+# Generate an admin token so that an initial one is available in the log file.
 sandstorm admin-token
