@@ -39,7 +39,7 @@ apt-get upgrade -y
 INSTALL_SCRIPT=/root/sandstorm-install.sh
 curl -o $INSTALL_SCRIPT https://install.sandstorm.io
 
-# Install empty-except so that we can trick the Sandstorm install
+# Install empty-expect so that we can trick the Sandstorm install
 # script into thinking it is being run from a terminal.  Admittedly,
 # this is brittle, but it seems to be the most straightforward way to
 # have a working proof of concept of a one-click install script.
