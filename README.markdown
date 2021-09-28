@@ -1,5 +1,7 @@
 # Sandstorm one-click install on Linode
 
+> We [...] aspire to have comprehensive documentation that's so good, someone with near zero knowledge of Linux can install Sandstorm. [[source](https://groups.google.com/g/sandstorm-dev/c/WGcQDMLg4OY/m/vMT6LT9cAgAJ)]
+
 This script provides a "one-click" install of [Sandstorm] on a [Linode] instance, following Linode's instructions for making a "Community [StackScript]."
 
 Right now it serves as a working proof of concept.  Note that it does not check GPG signatures on the upstream install script.
