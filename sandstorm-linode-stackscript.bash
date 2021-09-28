@@ -24,7 +24,7 @@ EOF
 
 # First, upgrade all packages.
 apt-get update
-apt-get upgrade -y
+apt-get dist-upgrade -y
 
 # Linode will ask the user to enter responses to the following prompts
 # before the script is run:
