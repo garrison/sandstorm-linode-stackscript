@@ -23,6 +23,7 @@ still or has failed.  You can follow its progress by running
 EOF
 
 # First, upgrade all packages.
+export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get dist-upgrade -y
 
